@@ -36,11 +36,11 @@ If you use the LLVMLinux project, this step can be done by editing "CLANG" and "
 2. Enable the instrumentation pass of UniSan: use option "-fsanitize=alloc"
 3. Make sure you have run UniSan's analysis pass. Once you run clang to compile your code, UniSan will secure the unsafe allocations based on /tmp/UnsafeAllocs.txt. 
 
-### Locating UniSan's code
+## Locating UniSan's code
 * Analysis pass: unisan/analysis/src/lib/
 * Instrumentation pass: llvm-3.7.1/llvm/lib/Transforms/Instrumentation/AllocSanitizer.cpp
 
-### Contributors
+## Contributors
 * [Kangjie Lu]
 * [Chengyu Song]
 * [Taesoo Kim]
