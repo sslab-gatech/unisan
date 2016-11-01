@@ -116,8 +116,10 @@ void AllocState::SetInitFlag(uint64_t Offset, uint64_t Size) {
 
 void AllocState::SetSinkFlag(uint64_t Offset, uint64_t Size) {
 
-	if (isDynamic)
+	if (isDynamic) {
+		reachSink = true;
 		return;
+	}
 
 	assert(Offset + Size <= size && "over size, cannot set sink flag");
 	// If the element is unknown, conservatively think the whole
