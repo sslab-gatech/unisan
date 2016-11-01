@@ -788,8 +788,6 @@ bool SafeAllocation::TrackArg(
 				F = FIter->second;
 			}
 			else {
-				// FIXME
-				continue;
 				// Assume unsafe if the called function is empty.
 				AS->SetSinkFlag(UN->ele->offset, UN->ele->size);
 				AS->AddFullySunkEle(UN->ele);
