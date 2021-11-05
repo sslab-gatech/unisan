@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT */
 #ifndef _SAFE_ALLOCATION_H
 #define _SAFE_ALLOCATION_H
 

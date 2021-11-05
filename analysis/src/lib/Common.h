@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT */
 #ifndef UNISAN_COMMON_H
 #define UNISAN_COMMON_H
 

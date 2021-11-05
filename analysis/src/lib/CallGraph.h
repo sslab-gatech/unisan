@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT */
 #ifndef _CALL_GRAPH_H
 #define _CALL_GRAPH_H
 

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 //===-- SafeAllocation.cc - Finding unsafe allocations ---------===//
 // 
 // This pass conservatively identifies unsafe allocation that are 

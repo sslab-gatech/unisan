@@ -5,9 +5,7 @@ According to a previous study and our study, most kernel information leaks are c
 
 UniSan is a novel, compiler-based approach that uses byte-level, flow-sensitive, context-sensitive, and field-sensitive initialization analysis and reachability analysis to check whether an allocation has been fully initialized when it leaves kernel space; if not, it automatically instruments the kernel to zero-initialize this allocation. UniSan is robust because its zero-initialization to allocations would not break original semantics. Also, UniSan is conservative to eliminate false negatives. We implemented UniSan as passes of LLVM. By applying it to the latest Linux kernel and Android kernel, we confirmed that UniSan can successfully prevent known and many new uninitialized data leak vulnerabilities, with a negligible performance overhead.
 
-## More details
-* UniSan paper (ACM CCS'16): http://www.cc.gatech.edu/~klu38/publications/unisan-ccs16.pdf
-* Webpage for UniSan: https://sslab.gtisc.gatech.edu/pages/unisan.html
+This repository has analysis tool and LLVM. LLVM related files follow their own license(LICENSE.LLVM), and analysis tool is provided under the terms of the MIT license.
 
 ## How to build UniSan
   ```sh
@@ -50,3 +48,16 @@ If you use the LLVMLinux project, this step can be done by editing "CLANG" and "
 [Chengyu Song]: <http://www.cs.ucr.edu/~csong>
 [Taesoo Kim]: <https://taesoo.gtisc.gatech.edu>
 [Wenke Lee]: <http://wenke.gtisc.gatech.edu>
+
+## Reference
+* UniSan paper (ACM CCS'16): https://dl.acm.org/doi/abs/10.1145/2976749.2978366
+* Webpage for UniSan: https://sslab.gtisc.gatech.edu/pages/unisan.html
+```
+@inproceedings{lu2016unisan,
+  title={Unisan: Proactive kernel memory initialization to eliminate data leakages},
+  author={Lu, Kangjie and Song, Chengyu and Kim, Taesoo and Lee, Wenke},
+  booktitle={Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+  pages={920--932},
+  year={2016}
+}
+```

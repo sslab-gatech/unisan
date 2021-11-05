@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 //===-- SAStructs.cc - Date structures for UniSan---------------===//
 // 
 // This file implements a number of data structures for UniSan.

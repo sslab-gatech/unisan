@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 //===-- CallGraph.cc - Build global call-graph------------------===//
 // 
 // This pass builds a global call-graph. The targets of an indirect

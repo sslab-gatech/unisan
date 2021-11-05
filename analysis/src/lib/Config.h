@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT */
 #ifndef _SACONFIG_H
 #define _SACONFIG_H
 

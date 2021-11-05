@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT */
 #ifndef _SAFE_ALLOC_STRUCTS_H
 #define _SAFE_ALLOC_STRUCTS_H
 
